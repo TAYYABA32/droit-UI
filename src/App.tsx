@@ -5,6 +5,7 @@ import Navbar from "./Components/navbar/Navbar";
 import Hero from "./Components/hero/Hero";
 import Counter from "./Components/counter/Counter";
 import Features from "./Components/features/Features";
+import Tools from "./Components/tools/Tools";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Counter />
       <Features />
+      <Tools />
     </div>
   );
 }
