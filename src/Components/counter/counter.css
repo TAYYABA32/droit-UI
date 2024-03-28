@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 100px;
+  background: rgba(135, 207, 235, 0.158);
+}
+.cont-1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: left;
+}
+.cont-1 h1 {
+  color: blue;
+  font-size: 60px;
+}

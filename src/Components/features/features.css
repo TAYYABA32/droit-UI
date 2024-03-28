@@ -1,0 +1,33 @@
+.container-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 180px;
+}
+.container-2 {
+  display: flex;
+  margin-top: 50px;
+  gap: 20px;
+}
+.card {
+  background-color: rgba(135, 207, 235, 0.13);
+  padding: 20px;
+  margin-top: 30px;
+}
+.view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+  gap: 6px;
+}
+
+.icon {
+  color: white;
+  background: blue;
+  font-size: 40px;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: -40px;
+}
