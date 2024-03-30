@@ -1,0 +1,57 @@
+.freq {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.freq h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.freq p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.question h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.answer {
+  padding: 10px 0;
+}
+
+.answer p {
+  font-size: 1rem;
+  margin: 0;
+  text-align: left;
+}
+
+.find-1 {
+  margin-top: 40px;
+  display: inline-block;
+  background-color: #f8fafc;
+  border: 1px solid #f8fafc;
+  padding: 10px;
+}
+
+.find-1 p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.find-1 span {
+  color: blue;
+  cursor: pointer;
+}

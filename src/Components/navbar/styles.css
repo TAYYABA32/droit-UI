@@ -53,13 +53,14 @@
   max-height: 100px;
   border: 1px solid blue;
 } */
-.btn1 {
-  font-size: 15px;
+/* .btn11 {
+  font-size: 14px;
   color: white;
   background-color: blue;
   border-radius: 6px;
   width: fit-content;
-  padding: 8px 6px;
+  padding: 14px 6px;
+  text-align: center;
   max-height: 50px;
-  border: 1px solid blue; /* Adding border style to the border property */
-}
+  border: 1px solid blue;
+} */

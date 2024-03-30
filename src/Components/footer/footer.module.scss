@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  gap: 20px;
+  background-color: #010a1e;
+  color: white;
+  justify-content: space-evenly;
+  padding: 100px;
+  margin-top: 100px;
+
+  .row1 {
+    flex: 3;
+    display: flex;
+
+    align-items: center;
+
+    .row22 {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 20px; /* Adjust margin between image and text */
+      }
+      p {
+        display: block;
+        justify-content: center;
+      }
+    }
+  }
+
+  .row {
+    align-self: flex-start;
+    text-align: left;
+  }
+
+  .row2,
+  .row3,
+  .row4,
+  .row5 {
+    flex: 1;
+  }
+}
+.hr {
+  background-color: #94a3b8;
+  height: 1px; /* Set the height of the hr */
+  border: none; /* Remove default border */
+  margin: 20px 0; /* Add margin for spacing */
+}

@@ -1,5 +1,7 @@
 import React from "react";
 import { FaAngleDown } from "react-icons/fa6";
+import Button from "../button/Button";
+
 import "./styles.css";
 
 const Navbar: React.FC = () => {
@@ -25,7 +27,8 @@ const Navbar: React.FC = () => {
       </div>
       <div className="rightContainer">
         <h4>Sign in</h4>
-        <button className="btn1">Get Started</button>
+        {/* <button className="btn11">Get Started</button> */}
+        <Button>Get Started</Button>
       </div>
     </div>
   );

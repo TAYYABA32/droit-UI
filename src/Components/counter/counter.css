@@ -4,7 +4,8 @@
   justify-content: center;
   gap: 40px;
   margin-top: 100px;
-  background: rgba(135, 207, 235, 0.158);
+  background-color: #f8fafc;
+  /* background: rgba(135, 207, 235, 0.158); */
 }
 .cont-1 {
   display: flex;

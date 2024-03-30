@@ -1,14 +1,41 @@
 .container3 {
-  display: flex;
-  /* align-items: center;
-    justify-content: center; */
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
   gap: 40px;
-  margin-top: 100px;
-  background: rgba(135, 207, 235, 0.158);
+  margin-top: 50px;
 }
-img {
+.container3 div {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
+}
+img {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+}
+.con-tools {
+  margin-top: 100px;
+}
+.img-tool {
+  /* display: block; */
+  justify-content: center;
+  margin: 10px;
+  align-items: center;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  padding: 10px 20px;
+  gap: 5px;
+  width: 80px;
+  height: 100px;
+}
+.view1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+  gap: 6px;
+  margin-top: 10px;
 }

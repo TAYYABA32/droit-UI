@@ -1,0 +1,28 @@
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.icon {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.leftIcon {
+  margin-right: 10px;
+}
+
+.rightIcon {
+  margin-left: 10px;
+}

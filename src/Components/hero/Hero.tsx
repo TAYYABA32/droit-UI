@@ -1,6 +1,8 @@
 import React from "react";
 import heroImg from "../../assests/01.png";
 import "./styles.css";
+import Button from "../button/Button";
+import { COLORS } from "../../constants/colors";
 
 const Hero: React.FC = () => {
   return (
@@ -16,16 +18,24 @@ const Hero: React.FC = () => {
         </p>
         <br />
         <div className="btn-container">
-          <button className="btn2">Get Started</button>
-          <button className="btn1">See How it Works</button>
+          {/* <button className="btn2">Get Started</button>
+          <button className="btn1">See How it Works</button> */}
+          <Button>Get Started</Button>
+          <Button
+            bgColor="white"
+            textColor={COLORS.theme_color}
+            borderColor={COLORS.theme_color}
+          >
+            See How it Works
+          </Button>
         </div>
         <div className="column-1">
           <div className="img-container">
-            <img src={require("../../assests/member-1.png")} />
-            <img src={require("../../assests/member-2.png")} />
-            <img src={require("../../assests/member-3.png")} />
-            <img src={require("../../assests/member-4.png")} />
-            <img src={require("../../assests/member-5.png")} />
+            <img src={require("../../assests/member-1.png")} alt="" />
+            <img src={require("../../assests/member-2.png")} alt="" />
+            <img src={require("../../assests/member-3.png")} alt="" />
+            <img src={require("../../assests/member-4.png")} alt="" />
+            <img src={require("../../assests/member-5.png")} alt="" />
           </div>
           <div>
             <p>
