@@ -64,3 +64,57 @@
   max-height: 50px;
   border: 1px solid blue;
 } */
+
+.menu-icon {
+  width: 24px;
+  display: none;
+  margin-left: 20px;
+}
+.signIn {
+  color: #475569;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .rightContainer {
+    gap: 0;
+  }
+  .leftContainer ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 30%;
+  }
+
+  .leftContainer ul.show {
+    display: flex;
+  }
+
+  .leftContainer ul li {
+    margin: 10px 0;
+  }
+
+  .rightContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  .loogo {
+    display: none;
+  }
+  .signIn {
+    color: #475569;
+    font-size: 16px;
+  }
+}

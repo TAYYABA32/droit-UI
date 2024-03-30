@@ -1,10 +1,18 @@
-import React from "react";
+// import React from "react";
+import React, { useState } from "react";
 import { FaAngleDown } from "react-icons/fa6";
 import Button from "../button/Button";
+import menuImg from "../../assests/menu.png";
 
 import "./styles.css";
 
 const Navbar: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to track menu open/close
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Toggle the menu state
+  };
+
   return (
     <div className="navContainer">
       <div className="leftContainer">
@@ -14,9 +22,9 @@ const Navbar: React.FC = () => {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0b2SryskiqY5WGrIg3uPven_7VKvqdLewHC2BUP0TMg&s"
             alt="Logo"
           />
-          <span>Droit UI</span>
+          <span className="loogo">Droit UI</span>
         </h2>
-        <ul>
+        <ul className={isMenuOpen ? "show" : ""}>
           <li id="fa-prodcuts">
             <span> Products</span> <FaAngleDown />
           </li>
@@ -26,9 +34,17 @@ const Navbar: React.FC = () => {
         </ul>
       </div>
       <div className="rightContainer">
-        <h4>Sign in</h4>
+        <a href="#" className="signIn">
+          Sign in
+        </a>
         {/* <button className="btn11">Get Started</button> */}
         <Button>Get Started</Button>
+        <img
+          src={menuImg}
+          className="menu-icon"
+          onClick={toggleMenu} // Use curly braces and pass the function reference
+          alt="Menu"
+        />
       </div>
     </div>
   );
