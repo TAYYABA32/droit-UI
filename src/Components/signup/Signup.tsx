@@ -29,7 +29,7 @@ const Signup = () => {
         </div>
         <div className="email-policy">
           <p>
-            We care about your data in our <a href="">privacy policy</a>.
+            We care about your data in our <a href="#!">privacy policy</a>.
           </p>
         </div>
       </div>

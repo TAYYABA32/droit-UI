@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
         </ul>
       </div>
       <div className="rightContainer">
-        <a href="#" className="signIn">
+        <a href="#!" className="signIn">
           Sign in
         </a>
         {/* <button className="btn11">Get Started</button> */}
