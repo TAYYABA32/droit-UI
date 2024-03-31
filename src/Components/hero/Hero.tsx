@@ -7,7 +7,6 @@ import { COLORS } from "../../constants/colors";
 const Hero: React.FC = () => {
   return (
     <div className="hero-section">
-      <img src={heroImg} id="banner" alt="Hero Banner" />
       <div className="hero-right">
         <h1>
           Unleash the power of <span>efficient</span> project management
@@ -21,14 +20,16 @@ const Hero: React.FC = () => {
           {/* <button className="btn2">Get Started</button>
           <button className="btn1">See How it Works</button> */}
           <Button>Get Started</Button>
+
           <Button
-            bgColor="white"
             textColor={COLORS.theme_color}
+            bgColor="white"
             borderColor={COLORS.theme_color}
           >
             See How it Works
           </Button>
         </div>
+
         <div className="column-1">
           <div className="img-container">
             <img src={require("../../assests/member-1.png")} alt="" />
@@ -44,6 +45,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
+      <img src={heroImg} id="banner" alt="Hero Banner" />
     </div>
   );
 };

@@ -2,8 +2,6 @@ import React from "react";
 import "./designer.css";
 import { IoMdStar } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa6";
-import { BiArrowBack } from "react-icons/bi";
-
 const Designer = () => {
   return (
     <div className="design-parent">
@@ -15,7 +13,8 @@ const Designer = () => {
         <IoMdStar />
 
         <div className="arrow-container">
-          <BiArrowBack className="arrow" style={{ color: "black" }} />
+          <FaArrowRight className="arrow" style={{ color: "black" }} />
+
           <div>
             <p>
               “You made it so simple. My new site is so much <br />

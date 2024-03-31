@@ -27,20 +27,32 @@ h6 {
 }
 .design-parent {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 40px;
   margin-top: 100px;
   background-color: #f8fafc;
   /* background: rgba(135, 207, 235, 0.158); */
-  height: 60vh;
+  /* height: 60vh; */
 }
 .arrow-container {
   display: flex;
-  gap: 200px;
+  flex-direction: column; /* Change to column layout for smaller screens */
   align-items: center;
+  gap: 20px;
 }
 .arrow {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   padding: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .design-parent {
+    height: auto; /* Remove fixed height for smaller screens */
+    /* padding: 20px;  */
+  }
+  /* 
+  /* .arrow-container {
+    gap: 10px; 
+  } */
 }

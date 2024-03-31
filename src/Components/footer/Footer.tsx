@@ -48,7 +48,7 @@ const Footer = () => {
           <p>Features </p>
         </div>
         <div className={`${styles.row} ${styles.row4}`}>
-          <h2>Webinars</h2>
+          <h2>Products</h2>
           <p>Tutorials</p>
           <p>Feedback</p>
           <p>Overview</p>

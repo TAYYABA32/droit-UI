@@ -57,3 +57,41 @@
   gap: 160px;
   padding: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .subscribe-form {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Add spacing between elements */
+  }
+
+  .email-input-container {
+    width: 100%; /* Make the input container full width */
+  }
+
+  .subscribe-input {
+    width: 100%; /* Make the input full width */
+  }
+
+  .email-icon {
+    display: none; /* Hide the email icon on mobile */
+  }
+
+  .subscribe-button {
+    border-radius: 5px; /* Adjust border-radius */
+    width: 100%; /* Make the button full width */
+  }
+
+  .email-policy-container {
+    margin-left: 0; /* Remove left margin */
+    margin-top: 10px; /* Add top margin */
+  }
+
+  .signup {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Add spacing between elements */
+    padding: 20px; /* Add padding */
+  }
+
+  .signup-left {
+    text-align: center; /* Center align text */
+  }
+}

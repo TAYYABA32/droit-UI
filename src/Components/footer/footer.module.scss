@@ -59,3 +59,28 @@
   display: flex;
   gap: 10px;
 }
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .row1 {
+    width: 100%;
+    align-items: center;
+    grid-column: span 2; /* Make .row1 span 2 columns */
+  }
+
+  .mainContainer {
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    max-height: none;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+}

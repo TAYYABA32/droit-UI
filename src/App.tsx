@@ -22,7 +22,7 @@ function App() {
       <Designer />
       <Frequently />
       <Signup />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

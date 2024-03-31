@@ -3,7 +3,7 @@ import "./tools.css";
 import { FaArrowRight } from "react-icons/fa";
 const Tools = () => {
   return (
-    <div>
+    <div className="notions">
       <div className="con-tools">
         <h1>Connect with an necessary tools</h1>
         <p>
