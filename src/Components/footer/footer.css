@@ -4,45 +4,47 @@
   background-color: #010a1e;
   color: white;
   justify-content: space-evenly;
+}
 
-  .row1 {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    align-self: start;
+.container .row1 {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+}
 
-    .row22 {
-      display: flex;
-      align-items: center;
+.container .row1 .row22 {
+  display: flex;
+  align-items: center;
+}
 
-      img {
-        margin-right: 20px; /* Adjust margin between image and text */
-      }
-      p {
-        display: block;
-        justify-content: center;
-      }
-    }
-  }
+.container .row1 .row22 img {
+  margin-right: 20px;
+}
 
-  .row {
-    align-self: flex-start;
-    text-align: left;
-  }
+.container .row1 .row22 p {
+  display: block;
+  justify-content: center;
+}
 
-  .row2,
-  .row3,
-  .row4,
-  .row5 {
-    flex: 1;
-  }
+.container .row {
+  align-self: flex-start;
+  text-align: left;
+}
+
+.container .row2,
+.container .row3,
+.container .row4,
+.container .row5 {
+  flex: 1;
 }
 
 .hr {
   background-color: #94a3b8;
-  height: 1px; /* Set the height of the hr */
-  border: none; /* Remove default border */
+  height: 1px;
+  border: none;
 }
+
 .mainContainer {
   display: flex;
   flex-direction: column;
@@ -51,14 +53,17 @@
   margin-top: 50px;
   max-height: 512px;
 }
+
 .copyright {
   color: white;
   margin-top: 50px;
 }
+
 .icons {
   display: flex;
   gap: 10px;
 }
+
 @media only screen and (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -67,10 +72,10 @@
     align-items: center;
   }
 
-  .row1 {
+  .container .row1 {
     width: 100%;
     align-items: center;
-    grid-column: span 2; /* Make .row1 span 2 columns */
+    grid-column: span 2;
   }
 
   .mainContainer {

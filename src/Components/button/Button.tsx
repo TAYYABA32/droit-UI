@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import styles from "./button.module.scss";
+import "./button.css"; // Remove import statement for CSS file
 
 interface ButtonProps {
   leftIcon?: ReactNode;
@@ -24,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       {...props}
-      className={styles.button}
+      className="button"
       style={{
         backgroundColor: bgColor,
         color: textColor,
@@ -32,15 +32,9 @@ const Button: React.FC<ButtonProps> = ({
       }}
       onClick={onClick}
     >
-      {leftIcon && (
-        <span className={`${styles.icon} ${styles.leftIcon}`}>{leftIcon}</span>
-      )}
+      {leftIcon && <span className={`icon leftIcon`}>{leftIcon}</span>}
       {children}
-      {rightIcon && (
-        <span className={`${styles.icon} ${styles.rightIcon}`}>
-          {rightIcon}
-        </span>
-      )}
+      {rightIcon && <span className={`icon rightIcon`}>{rightIcon}</span>}
     </button>
   );
 };

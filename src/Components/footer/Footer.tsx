@@ -1,17 +1,21 @@
 import React from "react";
-import styles from "./footer.module.scss";
-import { FaFacebook } from "react-icons/fa6";
-import { FaPinterestP } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaDiscord } from "react-icons/fa";
+import "./footer.css"; // Import the CSS file directly
+import {
+  FaFacebook,
+  FaPinterestP,
+  FaInstagramSquare,
+  FaTwitter,
+  FaDiscord,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className={styles.mainContainer}>
-      <div className={styles.container}>
-        <div className={`${styles.row} ${styles.row1}`}>
-          <div className={styles.row22}>
+    <div className="mainContainer">
+      {" "}
+      {/* Use regular class names without the 'styles' object */}
+      <div className="container">
+        <div className="row row1">
+          <div className="row22">
             <img
               id="img-logo"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0b2SryskiqY5WGrIg3uPven_7VKvqdLewHC2BUP0TMg&s"
@@ -20,26 +24,26 @@ const Footer = () => {
             <h3>Droit Ui</h3>
           </div>
           <p>
-            Create fantastic digital interactions that <br /> bring additional
-            joy to the world.
+            Create fantastic digital interactions that bring additional joy to
+            the world.
           </p>
-          <div className={styles.icons}>
+          <div className="icons">
             <FaFacebook />
             <FaPinterestP />
             <FaInstagramSquare />
-            <FaXTwitter />
+            <FaTwitter />
             <FaDiscord />
           </div>
         </div>
-        <div className={`${styles.row} ${styles.row2}`}>
+        <div className="row row2">
           <h2>Company</h2>
-          <p> About Us</p>
+          <p>About Us</p>
           <p>Features</p>
           <p>Our Blogs</p>
           <p>Integrations</p>
           <p>Use Cases</p>
         </div>
-        <div className={`${styles.row} ${styles.row3}`}>
+        <div className="row row3">
           <h2>Category</h2>
           <p>Booking</p>
           <p>Contact Us</p>
@@ -47,14 +51,14 @@ const Footer = () => {
           <p>Privacy Policy</p>
           <p>Features </p>
         </div>
-        <div className={`${styles.row} ${styles.row4}`}>
+        <div className="row row4">
           <h2>Products</h2>
           <p>Tutorials</p>
           <p>Feedback</p>
           <p>Overview</p>
           <p>Pricing</p>
         </div>
-        <div className={`${styles.row} ${styles.row5}`}>
+        <div className="row row5">
           <h2>Marketing</h2>
           <p>Terms of Service</p>
           <p>Privacy Policy</p>
@@ -63,8 +67,8 @@ const Footer = () => {
           <p>Customers</p>
         </div>
       </div>
-      <div className={styles.copyright}>
-        <hr className={styles.hr} />
+      <div className="copyright">
+        <hr className="hr" />
         <p>© 2024 Droit UI. All rights reserved.</p>
       </div>
     </div>

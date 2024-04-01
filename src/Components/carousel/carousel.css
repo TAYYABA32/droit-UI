@@ -27,19 +27,31 @@ h6 {
 }
 .design-parent {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 40px;
   margin-top: 100px;
-  background-color: #f8fafc;
+
   /* background: rgba(135, 207, 235, 0.158); */
   height: 60vh;
   position: relative;
 }
 .arrow-container {
   display: flex;
-  gap: 200px;
+  flex-direction: column;
+  gap: 20px;
   align-items: center;
+  font-size: 36px;
+}
+.test-1 {
+  background-color: #f8fafc;
+}
+.name h5 {
+  font-size: 18px;
+}
+.name h6 {
+  font-size: 18px;
 }
 .arrow {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
@@ -72,4 +84,9 @@ h6 {
     right: calc(50% + 20px);
     top: 90%;
   }
+}
+.parent-test {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
 }

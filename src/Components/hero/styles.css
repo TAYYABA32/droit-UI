@@ -83,11 +83,11 @@ h1 span {
   .hero-right {
     width: 100%;
     padding: 0 20px;
-    margin-left: 0px;
+    margin-left: 10px;
   }
 
   .hero-right h1 {
-    font-size: 24px; /* Adjust font size as needed */
+    font-size: 24px;
   }
 
   .hero-right p {
@@ -99,10 +99,11 @@ h1 span {
   }
 
   .column-1 {
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    margin-bottom: 40px;
   }
 
   .img-container {
@@ -113,9 +114,10 @@ h1 span {
   }
 
   .img-container img {
-    width: 50px;
-    height: 50px; /* Adjust image size as needed */
-    margin: 10px;
+    width: 30px;
+    height: 30px; /* Adjust image size as needed */
+    margin-top: 10px;
+    /* margin-bottom: 40px; */
   }
 
   .column-1 p {
