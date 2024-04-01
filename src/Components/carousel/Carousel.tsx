@@ -29,16 +29,16 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
-    prevArrow: <FaArrowLeft className="arrow" />,
-    nextArrow: <FaArrowRight className="arrow-right" />,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
 
   return (
     <div className="test-1">
-      <div className="parent-test">
+      <div className="">
         <Slider {...settings}>
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id}>
+            <div key={testimonial.id} className="parent-test">
               <div className="design-parent">
                 <div className="color">
                   {testimonial.rating?.map((item, index) => (
@@ -68,3 +68,28 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
 };
 
 export default TestimonialCarousel;
+function SampleNextArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className + " arrow arrow-right"}
+      style={{ ...style, display: "block" }}
+      onClick={onClick}
+    >
+      <FaArrowRight color="black" size={"14px"} />
+    </div>
+  );
+}
+
+function SamplePrevArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className + " arrow arrow-left"}
+      style={{ ...style, display: "block" }}
+      onClick={onClick}
+    >
+      <FaArrowLeft color="black" size={"14px"} />
+    </div>
+  );
+}

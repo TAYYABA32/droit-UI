@@ -117,4 +117,8 @@
     color: #475569;
     font-size: 16px;
   }
+  #img-logo {
+    width: 30px;
+    height: 30px;
+  }
 }

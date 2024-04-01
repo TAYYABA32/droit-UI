@@ -7,6 +7,7 @@ import Tools from "../Components/tools/Tools";
 import Frequently from "../Components/frequently/Frequently";
 import Signup from "../Components/signup/Signup";
 import TestimonialCarousel from "../Components/carousel/Carousel";
+import Navbar from "../Components/navbar/Navbar";
 const Home = () => {
   const testimonials = [
     // { id: 1, name: "John Doe", comment: "Great service, highly recommended!" },
@@ -46,6 +47,7 @@ const Home = () => {
   ];
   return (
     <>
+      <Navbar />
       <Hero />
       <Counter />
       <Features />
