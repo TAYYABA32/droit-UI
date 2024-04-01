@@ -52,6 +52,8 @@ h1 span {
   /* justify-content: center; */
   /* align-items: center; */
   margin-left: 2px;
+  justify-content: flex-start;
+  align-self: flex-start;
 }
 .img-container img {
   width: 40px;
@@ -63,7 +65,12 @@ h1 span {
   margin-top: 40px;
   display: flex;
   align-items: center;
+  flex-direction: column;
   gap: 10px;
+  background-color: white;
+  padding: 20px;
+  padding-right: 46px;
+  border-radius: 10px;
 }
 @media only screen and (max-width: 768px) {
   .hero-section {
@@ -101,7 +108,7 @@ h1 span {
   .column-1 {
     margin-top: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
   }
@@ -133,4 +140,103 @@ h1 span {
   position: absolute !important;
   bottom: 30px;
   left: 30px;
+}
+
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.email-input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.subscribe-input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.email-icon {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.email-policy-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; /* Adjust margin as needed */
+}
+
+.email-policy {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: left;
+}
+.signup-left {
+  text-align: left;
+}
+.signup {
+  margin-top: 100px;
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 160px;
+  padding: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .subscribe-form {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Add spacing between elements */
+  }
+
+  .email-input-container {
+    width: 100%; /* Make the input container full width */
+  }
+
+  .subscribe-input {
+    width: 100%; /* Make the input full width */
+  }
+
+  .email-icon {
+    display: none; /* Hide the email icon on mobile */
+  }
+
+  .subscribe-button {
+    border-radius: 5px; /* Adjust border-radius */
+    width: 100%; /* Make the button full width */
+  }
+
+  .email-policy-container {
+    margin-left: 0; /* Remove left margin */
+    margin-top: 10px; /* Add top margin */
+  }
+
+  .signup {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Add spacing between elements */
+    padding: 20px; /* Add padding */
+  }
+
+  .signup-left {
+    text-align: center; /* Center align text */
+  }
 }

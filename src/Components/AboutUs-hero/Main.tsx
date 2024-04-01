@@ -3,6 +3,7 @@ import heroImg from "../../assests/01.png";
 import "./main.css";
 import Button from "../button/Button";
 import { COLORS } from "../../constants/colors";
+import { AiOutlineMail } from "react-icons/ai";
 
 const Main = () => {
   return (
@@ -16,19 +17,20 @@ const Main = () => {
           departments work properly together
         </p>
         <br />
-        <div className="btn-container">
-          {/* <button className="btn2">Get Started</button>
-      <button className="btn1">See How it Works</button> */}
-          <Button>Get Started</Button>
+       
+        <div className="subscribe-form">
+          <div className="email-input-container">
+            <AiOutlineMail className="email-icon" />
+            <input
+              type="email"
+              className="subscribe-input"
+              placeholder="Enter email address"
+            />
 
-          <Button
-            textColor={COLORS.theme_color}
-            bgColor="white"
-            borderColor={COLORS.theme_color}
-          >
-            See How it Works
-          </Button>
+            <button className="subscribe-button">Subscribe</button>
+          </div>
         </div>
+       
       </div>
       <div className="right-image">
         {" "}
@@ -49,7 +51,7 @@ const Main = () => {
           </div>
           <div>
             <p>
-              <b>10+ million</b> users use our <br /> product worldwide
+              <b>10+ million</b> <br /> users use our  product worldwide
             </p>
           </div>
         </div>

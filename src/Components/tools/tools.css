@@ -5,6 +5,9 @@
   gap: 40px;
   margin-top: 50px;
 }
+.notions{
+  text-align: center;
+}
 .container3 div {
   display: flex;
   justify-content: center;
