@@ -2,11 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import "../uidesigner/designer.css";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { IoMdStar } from "react-icons/io";
-import { FaArrowRight } from "react-icons/fa6";
-import { FaArrowLeft } from "react-icons/fa6";
 import "./carousel.css";
 
 interface Testimonial {
@@ -32,18 +29,8 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
-    prevArrow: (
-      <FaArrowLeft
-        className="arrow arrow-right"
-        style={{ color: "black", marginLeft: "50px" }}
-      />
-    ),
-    nextArrow: (
-      <FaArrowRight
-        className="arrow arrow-left"
-        style={{ color: "black", marginRight: "50px" }}
-      />
-    ),
+    prevArrow: <FaArrowLeft className="arrow" />,
+    nextArrow: <FaArrowRight className="arrow-right" />,
   };
 
   return (
@@ -54,8 +41,8 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
             <div key={testimonial.id}>
               <div className="design-parent">
                 <div className="color">
-                  {testimonial.rating?.map((item) => (
-                    <IoMdStar style={{ color: "#EAB308" }} />
+                  {testimonial.rating?.map((item, index) => (
+                    <IoMdStar key={index} style={{ color: "#EAB308" }} />
                   ))}
                 </div>
                 <div className="arrow-container">

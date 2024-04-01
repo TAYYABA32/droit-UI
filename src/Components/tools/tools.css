@@ -24,12 +24,12 @@ img {
   justify-content: center;
   margin: 10px;
   align-items: center;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
   border-radius: 10px;
   padding: 10px 20px;
-  gap: 5px;
-  width: 80px;
-  height: 100px;
+  gap: 2px;
+  width: 140px;
+  height: 140px;
 }
 .view1 {
   display: flex;

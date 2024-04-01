@@ -2,7 +2,7 @@ import React from "react";
 import "./counter.css";
 const Counter = () => {
   return (
-    <div className="container">
+    <div className="container111">
       <div className="cont-1">
         <h1>315</h1>
         <div>
