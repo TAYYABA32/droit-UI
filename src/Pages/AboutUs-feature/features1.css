@@ -1,19 +1,12 @@
-.container-11 {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 40px;
+.container-12 {
+  text-align: center;
+  margin-top: 80px;
+  background-color: #f8fafc;
 }
-.container-22 {
-  display: flex;
 
-  margin-top: 50px;
-  gap: 20px;
-}
 .cardd {
   /* background-color: rgba(135, 207, 235, 0.13); */
-  background-color: #f8fafc;
+  /* background-color: #f8fafc; */
 
   padding: 20px;
   margin-top: 10px;
@@ -27,14 +20,24 @@
   gap: 6px;
 }
 
-.icon {
-  color: white;
-  background: blue;
-  font-size: 40px;
+.iicon {
+  color: #2563eb;
+  font-size: 60px;
   padding: 15px;
   border-radius: 4px;
   margin-top: -40px;
 }
+.container-2 {
+  display: block;
+}
+.roww {
+  display: flex;
+}
+.roww1 {
+  display: flex;
+  margin-top: 50px;
+}
+
 @media only screen and (max-width: 768px) {
   .container-2 {
     display: flex;

@@ -6,7 +6,7 @@ import { BsGraphUpArrow } from "react-icons/bs";
 import { FaArrowRight } from "react-icons/fa";
 const Features = () => {
   return (
-    <div className=" container-1">
+    <div className=" container-11">
       <div>
         <h1>The most powerful features</h1>
         <p>
@@ -16,8 +16,8 @@ const Features = () => {
         </p>
       </div>
 
-      <div className="container-2">
-        <div className="card">
+      <div className="container-22">
+        <div className="cardd">
           <MdGroup className="icon" />
           <h1>Unlimited User Seats</h1>
           <p>
@@ -32,7 +32,7 @@ const Features = () => {
           </div>
         </div>
 
-        <div className="card">
+        <div className="cardd">
           <TbSparkles className="icon" />
           <h1>Powerful Semantic Search</h1>
           <p>
@@ -46,7 +46,7 @@ const Features = () => {
             <FaArrowRight />
           </div>
         </div>
-        <div className="card">
+        <div className="cardd">
           <BsGraphUpArrow className="icon" />
           <h1>User-friendly Analytics</h1>
           <p>

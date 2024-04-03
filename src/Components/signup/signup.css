@@ -1,6 +1,7 @@
 .subscribe-form {
   display: flex;
   align-items: center;
+
   /* justify-content: center; */
 }
 
@@ -20,8 +21,10 @@
 }
 
 .email-icon {
-  padding: 10px;
-  font-size: 20px;
+  /* padding: 10px;
+  font-size: 20px; */
+  padding: 0px 5px;
+  font-size: 40px;
 }
 
 .subscribe-button {
@@ -64,7 +67,7 @@
   }
 
   .email-input-container {
-    width: 100%; /* Make the input container full width */
+    width: 100%;
   }
 
   .subscribe-input {
@@ -72,7 +75,8 @@
   }
 
   .email-icon {
-    display: none; /* Hide the email icon on mobile */
+    padding: 0px 5px;
+    font-size: 40px;
   }
 
   .subscribe-button {

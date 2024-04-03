@@ -1,14 +1,13 @@
 import React from "react";
-import heroImg from "../../assests/01.png";
+
 import "./main.css";
-import Button from "../button/Button";
-import { COLORS } from "../../constants/colors";
+
 import { AiOutlineMail } from "react-icons/ai";
 
 const Main = () => {
   return (
-    <div className="hero-section">
-      <div className="hero-right">
+    <div className="about-hero-section">
+      <div className="about-hero-right">
         <h1>
           Unleash the power of <span>efficient</span> project management
         </h1>
@@ -17,22 +16,21 @@ const Main = () => {
           departments work properly together
         </p>
         <br />
-       
-        <div className="subscribe-form">
-          <div className="email-input-container">
-            <AiOutlineMail className="email-icon" />
+
+        <div className="about-subscribe-form">
+          <div className="about-email-input-container">
+            <AiOutlineMail className="about-email-icon" />
             <input
               type="email"
-              className="subscribe-input"
+              className="about-subscribe-input"
               placeholder="Enter email address"
             />
 
-            <button className="subscribe-button">Subscribe</button>
+            <button className="about-subscribe-button">Subscribe</button>
           </div>
         </div>
-       
       </div>
-      <div className="right-image">
+      <div className="about-right-image">
         {" "}
         <img
           src={
@@ -41,8 +39,8 @@ const Main = () => {
           id="banner"
           alt="Hero Banner"
         />
-        <div className="column-1">
-          <div className="img-container">
+        <div className="about-column-1">
+          <div className="about-img-container">
             <img src={require("../../assests/member-1.png")} alt="" />
             <img src={require("../../assests/member-2.png")} alt="" />
             <img src={require("../../assests/member-3.png")} alt="" />
@@ -51,7 +49,7 @@ const Main = () => {
           </div>
           <div>
             <p>
-              <b>10+ million</b> <br /> users use our  product worldwide
+              <b>10+ million</b> <br /> users use our product worldwide
             </p>
           </div>
         </div>

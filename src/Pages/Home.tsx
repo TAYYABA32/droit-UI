@@ -8,6 +8,8 @@ import Frequently from "../Components/frequently/Frequently";
 import Signup from "../Components/signup/Signup";
 import TestimonialCarousel from "../Components/carousel/Carousel";
 import Navbar from "../Components/navbar/Navbar";
+import Footer from "../Components/footer/Footer";
+
 const Home = () => {
   const testimonials = [
     // { id: 1, name: "John Doe", comment: "Great service, highly recommended!" },
@@ -56,6 +58,7 @@ const Home = () => {
       <TestimonialCarousel testimonials={testimonials} />
       <Frequently />
       <Signup />
+      <Footer />
     </>
   );
 };
