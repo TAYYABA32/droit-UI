@@ -1,6 +1,8 @@
 .count {
   display: flex;
-  padding-left: 10%;
+  justify-content: center;
+  font-size: 10px;
+
   gap: 30px;
 }
 .count-img {
@@ -19,6 +21,7 @@
     padding-left: 0;
     padding-right: 0;
     gap: 20px;
+    flex-wrap: wrap;
   }
 
   .count-img {

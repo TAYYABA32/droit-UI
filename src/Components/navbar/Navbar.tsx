@@ -27,16 +27,27 @@ const Navbar: React.FC = () => {
         </h2>
         <ul className={isMenuOpen ? "show" : ""}>
           <li>
-            <Link to={"/"}>Home</Link>
-          </li>
-          <li id="fa-prodcuts">
-            <span> Products</span> <FaAngleDown />
+            <Link className="link" to={"/"}>
+              Home
+            </Link>
           </li>
 
           <li>
-            <Link to={"/about-us"}>About Us</Link>
+            <Link className="link" to={"/about-us"}>
+              About Us
+            </Link>
           </li>
-          <li>Pricing</li>
+
+          <li>
+            <Link className="link" to={"/contact-us"}>
+              Contact Us
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to={"/pricing"}>
+              Pricing
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="rightContainer">

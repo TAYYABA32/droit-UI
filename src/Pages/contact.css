@@ -1,0 +1,81 @@
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 100px;
+}
+.contact-head {
+  display: inline-block;
+  margin-right: 100px;
+  width: 500px;
+  padding: 40px;
+}
+.contact-form {
+  display: inline-block;
+  /* width: 60%; */
+  padding: 30px;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+}
+
+.unorderlist li {
+  list-style-type: none;
+  justify-content: space-between;
+}
+.tag-list {
+  color: #2563eb;
+}
+input {
+  height: 44px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 316px;
+  padding: 15px;
+  margin-top: 10px;
+}
+.row33 {
+  display: flex;
+  gap: 20px;
+}
+select {
+  height: 44px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 652px;
+  padding: 10px;
+  margin-top: 10px;
+}
+textarea {
+  height: 142px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 652px;
+  padding: 12px;
+  margin-top: 10px;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border: 1px solid lightgray;
+}
+.button12 {
+  width: 652px;
+  height: 56px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .contact-head {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
