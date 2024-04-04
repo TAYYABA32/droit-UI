@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
         </h2>
         <ul className={isMenuOpen ? "show" : ""}>
           <li>
-            <Link to={"/home"}>Home</Link>
+            <Link to={"/"}>Home</Link>
           </li>
           <li id="fa-prodcuts">
             <span> Products</span> <FaAngleDown />
