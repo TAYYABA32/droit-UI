@@ -4,7 +4,7 @@
   background-color: #f8fafc;
 }
 
-.cardd {
+.card {
   /* background-color: rgba(135, 207, 235, 0.13); */
   /* background-color: #f8fafc; */
 
@@ -43,4 +43,31 @@
     display: flex;
     flex-direction: column;
   }
+
+  .container-12 {
+    margin-top: 40px;
+  }
+
+  .roww1 {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .roww {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .iicon {
+    font-size: 60px;
+    margin-top: -20px; /* Adjusted margin for smaller screens */
+  }
+
+  .card {
+    padding: 10px; /* Adjusted padding for smaller screens */
+    margin-top: 5px; /* Adjusted margin for smaller screens */
+  }
+  /* .cont {
+    display: flex;
+    flex-direction: column;
+  } */
 }

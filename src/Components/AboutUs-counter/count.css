@@ -14,3 +14,27 @@
   text-align: center;
   margin-top: 100px;
 }
+@media only screen and (max-width: 768px) {
+  .count {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 20px;
+  }
+
+  .count-img {
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    gap: 10px;
+  }
+  /* .img11 {
+    flex-wrap: wrap;
+  } */
+
+  .count-parent p {
+    margin-top: 10px; /* Adjusted margin for smaller screens */
+  }
+  /* .img1 {
+    display: flex;
+  } */
+}

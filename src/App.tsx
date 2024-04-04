@@ -53,7 +53,7 @@ import AboutUs from "./Pages/AboutUs";
 function App() {
   return (
     <Router>
-      <Route path="/" exact component={Home} />
+      <Route path="/home" exact component={Home} />
       <Route path="/about-us" component={AboutUs} />
     </Router>
   );

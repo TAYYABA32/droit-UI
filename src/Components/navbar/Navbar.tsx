@@ -5,6 +5,7 @@ import Button from "../button/Button";
 import menuImg from "../../assests/menu.png";
 
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to track menu open/close
@@ -25,11 +26,16 @@ const Navbar: React.FC = () => {
           <span className="loogo">Droit UI</span>
         </h2>
         <ul className={isMenuOpen ? "show" : ""}>
+          <li>
+            <Link to={"/home"}>Home</Link>
+          </li>
           <li id="fa-prodcuts">
             <span> Products</span> <FaAngleDown />
           </li>
-          <li>Compnents</li>
-          <li>Solutions</li>
+
+          <li>
+            <Link to={"/about-us"}>About Us</Link>
+          </li>
           <li>Pricing</li>
         </ul>
       </div>

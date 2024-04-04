@@ -22,7 +22,7 @@ export const Features1 = () => {
 
       <div className="container-2">
         <div className="roww">
-          <div className="cardd">
+          <div className="card">
             <MdGroup className="iicon" />
             <h4>Unlimited User Seats</h4>
             <p>
@@ -36,7 +36,7 @@ export const Features1 = () => {
               <FaArrowRight />
             </div>
           </div>
-          <div className="cardd">
+          <div className="card">
             <TbSparkles className="iicon" />
             <h4>Powerful Semantic Search</h4>
             <p>
@@ -50,7 +50,7 @@ export const Features1 = () => {
               <FaArrowRight />
             </div>
           </div>
-          <div className="cardd">
+          <div className="card">
             <BsGraphUpArrow className="iicon" />
             <h4>User-friendly Analytics</h4>
             <p>
@@ -65,8 +65,9 @@ export const Features1 = () => {
             </div>
           </div>
         </div>
+
         <div className="roww1">
-          <div className="cardd">
+          <div className="card">
             <PiShootingStarBold className="iicon" />
             <h4>Custom Unified Feedback</h4>
             <p>
@@ -80,7 +81,7 @@ export const Features1 = () => {
               <FaArrowRight />
             </div>
           </div>
-          <div className="cardd">
+          <div className="card">
             <FaMagic className="iicon" />
             <h4>Auto-generated Themes</h4>
             <p>
@@ -94,7 +95,7 @@ export const Features1 = () => {
               <FaArrowRight />
             </div>
           </div>
-          <div className="cardd">
+          <div className="card">
             <FaClock className="iicon" />
             <h4>Continuously Updated</h4>
             <p>

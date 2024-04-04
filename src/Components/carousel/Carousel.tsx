@@ -35,26 +35,28 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
 
   return (
     <div className="test-1">
-      <div className="">
+      <div className="test2">
         <Slider {...settings}>
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="parent-test">
-              <div className="design-parent">
-                <div className="color">
-                  {testimonial.rating?.map((item, index) => (
-                    <IoMdStar key={index} style={{ color: "#EAB308" }} />
-                  ))}
-                </div>
-                <div className="arrow-container">
-                  <p>{testimonial.comment}</p>
-                  <div className="member">
-                    <img
-                      src={require(`../../assests/${testimonial.img}`)}
-                      alt=""
-                    />
-                    <div className="name">
-                      <h5>{testimonial.name}</h5>
-                      <h6>{testimonial.designation}</h6>
+            <div key={testimonial.id}>
+              <div className="parent-test">
+                <div className="design-parent">
+                  <div className="color">
+                    {testimonial.rating?.map((item, index) => (
+                      <IoMdStar key={index} style={{ color: "#EAB308" }} />
+                    ))}
+                  </div>
+                  <div className="arrow-container">
+                    <p>{testimonial.comment}</p>
+                    <div className="member">
+                      <img
+                        src={require(`../../assests/${testimonial.img}`)}
+                        alt=""
+                      />
+                      <div className="name">
+                        <h5>{testimonial.name}</h5>
+                        <h6>{testimonial.designation}</h6>
+                      </div>
                     </div>
                   </div>
                 </div>
