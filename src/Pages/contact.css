@@ -3,23 +3,29 @@
   justify-content: space-around;
   width: 100%;
   padding: 10px;
+  margin-top: 50px;
 }
 .contact-head {
   display: inline-block;
   /* margin-right: 100px; */
-  /* width: 90%; */
-  /* padding: 40px; */
+  width: 40%;
+  margin-left: 40px;
 }
 .contact-form {
   display: inline-block;
-  /* width: 60%; */
+  width: 60%;
   padding: 30px;
+
+  margin-left: 40px;
+  margin-right: 40px;
   border: 1px solid #e2e8f0;
   border-radius: 20px;
 }
 .unorderlist1 {
   text-align: left;
   padding-left: 0 !important;
+  list-style: none;
+  font-size: 15px;
 }
 
 /* .unorderlist1 li {
@@ -28,6 +34,7 @@
 } */
 .tag-list {
   color: #2563eb;
+  margin-right: 5px;
 }
 input {
   height: 44px;
@@ -38,9 +45,18 @@ input {
   margin-top: 10px;
   width: 100%;
 }
+.checkboxctrl {
+  height: 15px;
+  width: auto;
+  margin-right: 10px;
+  margin-top: 4px;
+}
 .row33 {
   display: flex;
   gap: 20px;
+}
+.row33 div {
+  width: 50%;
 }
 select {
   height: 44px;
@@ -71,45 +87,56 @@ input[type="checkbox"] {
   align-items: center;
 }
 
-/* @media only screen and (max-width: 768px) {
-  .wrapper {
-    padding: 80px;
-
-    flex-direction: column;
-  }
-  .row33 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .contact-head {
-    display: flex;
-
-    margin-right: 100px;
-    width: 90%;
-    padding: 40px; 
-  }
-} */
 @media only screen and (max-width: 768px) {
   .wrapper {
     flex-direction: column;
-    padding: 20px; /* Adjusted padding */
+    padding: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
   }
 
   .row33 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+  .contact-form {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .contact-head,
   .contact-form {
     width: 100%; /* Adjusted width */
-    padding: 20px; /* Reduced padding */
+    padding: 20px;
   }
+  .contact-head {
+    margin-left: 0px;
+  }
+
   .checkbox-container {
     display: flex;
     justify-content: start;
     align-items: center;
   }
+  .wrapper Button {
+    width: 100%;
+    text-align: center;
+  }
+  .row33 div {
+    width: 100%;
+  }
+  .tag-list {
+    margin-right: 5px;
+  }
+  .unorderlist1 {
+    text-align: left;
+    padding-left: 0 !important;
+    list-style: none;
+    font-size: 12px;
+  }
+}
+.wrapper Button {
+  width: 100%;
+  text-align: center;
 }

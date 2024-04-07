@@ -9,7 +9,8 @@ const Main = () => {
     <div className="about-hero-section">
       <div className="about-hero-right">
         <h1>
-          Unleash the power of <span>efficient</span> project management
+          Unleash the power of <span className="h1-sapn">efficient</span>{" "}
+          project management
         </h1>
         <p>
           Make your work easier with an integrated ecosystem that lets all

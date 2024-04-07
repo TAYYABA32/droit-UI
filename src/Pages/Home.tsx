@@ -53,7 +53,7 @@ const Home = () => {
       <Tools />
       {/* <Designer /> */}
       <TestimonialCarousel testimonials={testimonials} />
-      <Frequently />
+      <Frequently headvisible={true} />
       <Signup />
     </>
   );

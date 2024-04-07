@@ -3,7 +3,9 @@ import { BsPlus, BsDash } from "react-icons/bs";
 import "./frequently.css";
 import { faqData } from "./data";
 
-const Frequently = () => {
+const Frequently = (props = { headvisible: true }) => {
+  const { headvisible } = props;
+
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -17,11 +19,18 @@ const Frequently = () => {
   return (
     <div className="freq">
       <div>
-        <h1>Frequently asked questions</h1>
-        <p>
-          Some questions about DroitUI are asked frequently. We've answered the
-          most <br /> frequent of those frequent questions below.
-        </p>
+        {headvisible ? (
+          <div>
+            <h1>Frequently asked questions</h1>
+            <p>
+              Some questions about DroitUI are asked frequently. We've answered
+              the most <br /> frequent of those frequent questions below.
+            </p>
+          </div>
+        ) : (
+          <div></div>
+        )}
+
         {faqData.map((item, index) => (
           <div key={index}>
             <div className="question" onClick={() => toggleAccordion(index)}>

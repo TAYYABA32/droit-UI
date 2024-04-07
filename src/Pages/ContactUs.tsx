@@ -20,18 +20,17 @@ const ConactUs = () => {
           <ul className="unorderlist1">
             <li>
               {" "}
-              <IoMail className="tag-list" /> &nbsp; <b>contact@droitui.com</b>
+              <IoMail className="tag-list" /> <b>contact@droitui.com</b>
             </li>
             <br />
             <li>
               {" "}
-              <FaPhoneAlt className="tag-list" /> &nbsp;{" "}
-              <b> +1 (555) 333-9494 </b>
+              <FaPhoneAlt className="tag-list" /> <b> +1 (555) 333-9494 </b>
             </li>
             <br />
             <li>
               {" "}
-              <IoLocationSharp className="tag-list" /> &nbsp;{" "}
+              <IoLocationSharp className="tag-list" />{" "}
               <b>110 Sample St, New York, NY USA</b>
             </li>
           </ul>
@@ -84,14 +83,17 @@ const ConactUs = () => {
           <br />
           <div className="checkbox-container">
             <input
+              className="checkboxctrl"
               type="checkbox"
               name="iaccepttheterms"
               id="iaccepttheterms"
             />{" "}
-            <label htmlFor="iaccepttheterms">I accept the term</label>
+            <label htmlFor="iaccepttheterms">
+              I accept the <u>Terms</u>
+            </label>
           </div>
           <br />
-          <Button bgColor="#FFFFFF" textColor="white">
+          <Button bgColor="blue" textColor="white">
             Get Started
           </Button>
         </div>
