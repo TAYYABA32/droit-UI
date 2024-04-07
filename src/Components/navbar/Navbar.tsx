@@ -1,6 +1,6 @@
 // import React from "react";
 import React, { useState } from "react";
-import { FaAngleDown } from "react-icons/fa6";
+
 import Button from "../button/Button";
 import menuImg from "../../assests/menu.png";
 
