@@ -1,6 +1,7 @@
 import React from "react";
 import "./contact.css";
 import { IoMail } from "react-icons/io5";
+import Button from "../Components/button/Button";
 
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
@@ -16,7 +17,7 @@ const ConactUs = () => {
             to you within 24 hours.
           </p>
           <br />
-          <ul className="unorderlist">
+          <ul className="unorderlist1">
             <li>
               {" "}
               <IoMail className="tag-list" /> &nbsp; <b>contact@droitui.com</b>
@@ -81,18 +82,21 @@ const ConactUs = () => {
             ></textarea>
           </div>
           <br />
-          <div>
+          <div className="checkbox-container">
             <input
               type="checkbox"
               name="iaccepttheterms"
               id="iaccepttheterms"
             />{" "}
-            &nbsp; I accept the Terms
+            <label htmlFor="iaccepttheterms">I accept the term</label>
           </div>
           <br />
-          <button className="button12">Get Started</button>
+          <Button bgColor="#FFFFFF" textColor="white">
+            Get Started
+          </Button>
         </div>
       </div>
+      {/* <button className="button12">Get Started</button> */}
     </>
   );
 };

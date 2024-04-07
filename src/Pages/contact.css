@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding: 100px;
+  padding: 10px;
 }
 .contact-head {
   display: inline-block;
-  margin-right: 100px;
-  width: 500px;
-  padding: 40px;
+  /* margin-right: 100px; */
+  /* width: 90%; */
+  /* padding: 40px; */
 }
 .contact-form {
   display: inline-block;
@@ -17,11 +17,15 @@
   border: 1px solid #e2e8f0;
   border-radius: 20px;
 }
+.unorderlist1 {
+  text-align: left;
+  padding-left: 0 !important;
+}
 
-.unorderlist li {
+/* .unorderlist1 li {
   list-style-type: none;
   justify-content: space-between;
-}
+} */
 .tag-list {
   color: #2563eb;
 }
@@ -29,9 +33,10 @@ input {
   height: 44px;
   border: 1px solid lightgray;
   border-radius: 5px;
-  width: 316px;
+  /* width: 316px; */
   padding: 15px;
   margin-top: 10px;
+  width: 100%;
 }
 .row33 {
   display: flex;
@@ -41,41 +46,70 @@ select {
   height: 44px;
   border: 1px solid lightgray;
   border-radius: 5px;
-  width: 652px;
+  /* width: 652px; */
   padding: 10px;
   margin-top: 10px;
+  width: 100%;
 }
 textarea {
   height: 142px;
   border: 1px solid lightgray;
   border-radius: 5px;
-  width: 652px;
+  /* width: 652px; */
   padding: 12px;
+  width: 100%;
   margin-top: 10px;
 }
 input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
+  /* width: 20px; */
+
   border: 1px solid lightgray;
 }
-.button12 {
-  width: 652px;
-  height: 56px;
-  border-radius: 5px;
-  border: none;
-  background-color: #2563eb;
-  color: white;
-  margin-top: 10px;
+.checkbox-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
-@media screen and (min-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .wrapper {
-    flex-direction: row;
-    justify-content: space-around;
+    padding: 80px;
+
+    flex-direction: column;
+  }
+  .row33 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact-head {
+    display: flex;
+
+    margin-right: 100px;
+    width: 90%;
+    padding: 40px; 
+  }
+} */
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 20px; /* Adjusted padding */
   }
 
-  .contact-head {
-    margin-right: 20px;
-    margin-bottom: 0;
+  .row33 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-head,
+  .contact-form {
+    width: 100%; /* Adjusted width */
+    padding: 20px; /* Reduced padding */
+  }
+  .checkbox-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
   }
 }
