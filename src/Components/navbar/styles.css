@@ -95,18 +95,10 @@
     background-color: #333;
     color: white;
     padding: 20px;
-    height: 30%;
+    height: auto;
   }
 
   .leftContainer ul.show {
-    display: flex;
-  }
-
-  .leftContainer ul li {
-    margin: 10px 0;
-  }
-
-  .rightContainer {
     display: flex;
     align-items: center;
   }
@@ -124,5 +116,8 @@
   #img-logo {
     width: 30px;
     height: 30px;
+  }
+  .link {
+    color: white;
   }
 }
