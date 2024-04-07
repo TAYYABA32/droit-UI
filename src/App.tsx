@@ -8,6 +8,8 @@ import ConactUs from "./Pages/ContactUs";
 import Pricing from "./Pages/Pricing";
 import Navbar from "./Components/navbar/Navbar";
 import Footer from "./Components/footer/Footer";
+import SignupPage from "./Pages/Signup";
+import Login from "./Pages/Login";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/about-us" component={AboutUs} />
         <Route path="/contact-us" component={ConactUs} />
         <Route path="/pricing" component={Pricing} />
+        <Route path="/signup" component={SignupPage} />
+        <Route path="/signin" component={Login} />
         <Footer />
       </Router>
     </>

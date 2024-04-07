@@ -32,9 +32,13 @@
 }
 .roww {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .roww1 {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 50px;
 }
 

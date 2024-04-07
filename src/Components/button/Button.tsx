@@ -9,6 +9,7 @@ interface ButtonProps {
   onClick?: () => void;
   borderColor?: string;
   children: ReactNode;
+  widthProp?: "fit" | "full";
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -18,6 +19,7 @@ const Button: React.FC<ButtonProps> = ({
   textColor = "white",
   onClick,
   borderColor,
+  widthProp,
   children,
   ...props
 }: ButtonProps) => {
@@ -29,6 +31,7 @@ const Button: React.FC<ButtonProps> = ({
         backgroundColor: bgColor,
         color: textColor,
         borderColor: borderColor,
+        width: widthProp === "full" ? "100%" : "fit-content",
       }}
       onClick={onClick}
     >

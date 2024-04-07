@@ -51,11 +51,13 @@ const Navbar: React.FC = () => {
         </ul>
       </div>
       <div className="rightContainer">
-        <a href="#!" className="signIn">
+        <Link to={"/signin"} className="signIn">
           Sign in
-        </a>
+        </Link>
         {/* <button className="btn11">Get Started</button> */}
-        <Button>Get Started</Button>
+        <Link to="/signup">
+          <Button>Get Started</Button>
+        </Link>
         <img
           src={menuImg}
           className="menu-icon"
